@@ -7,13 +7,13 @@ import { createUserWithEmailAndPassword,
          updateProfile } 
         from "firebase/auth";
 import{ auth } from "../utils/firebase"
-import { useNavigate } from "react-router-dom";
+
 
 const Login = () => {
 
   const[isSignInForm, setIsSignForm] = useState(true);
   const[errorMeassage, setErrorMeassage] = useState(null);
-  const navigate = useNavigate();
+ 
 
   const name = useRef(null)
   const email = useRef(null);
@@ -35,7 +35,7 @@ const Login = () => {
           updateProfile(user, {
             displayName: name.current.value
           }).then(() => {
-            navigate("/browse");
+            // navigate("/browse");
           }).catch((error) => {
             setErrorMeassage(error.message)
           });
@@ -59,8 +59,6 @@ const Login = () => {
         .then((userCredential) => {
          // Signed in 
         const user = userCredential.user;
-        console.log(user);
-        navigate("/browse")
         
          // ...
        })
