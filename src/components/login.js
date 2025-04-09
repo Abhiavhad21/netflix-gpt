@@ -60,6 +60,7 @@ const Login = () => {
          // Signed in 
         const user = userCredential.user;
         
+        
          // ...
        })
 
@@ -84,8 +85,6 @@ const Login = () => {
             <img
             src={BG_URL}
             alt="logo" />
-
-
         </div>
         <form
          onSubmit={(e) => e.preventDefault()}
