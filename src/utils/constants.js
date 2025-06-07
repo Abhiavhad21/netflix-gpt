@@ -20,4 +20,5 @@ export const SUPPORTED_LANGUAGESC = [
   {identifer : "mr", name:"Marathi"},
 ];
 
+export const GIMINIAI_KEY = "AIzaSyBpYKQLRNYG1fgo4fIBrLrs3qFth9wupp0";
 

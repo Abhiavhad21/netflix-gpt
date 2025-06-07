@@ -45,7 +45,7 @@ const Header = () => {
       return () =>unsubscribe();
     }, []);
 
-  const handelGptSearchClick = () =>{
+  const handleGptSearchClick = () =>{
     dispatch(toggleGptSearchView());
   }
 
@@ -71,7 +71,7 @@ const Header = () => {
           </select>
         )}
 
-          <button className="flex items-center gap-2 px-4 py-2 mx-2 my-4 bg-blue-600 text-white hover:bg-blue-700 rounded-xl" onClick={handelGptSearchClick}>
+          <button className="flex items-center gap-2 px-4 py-2 mx-2 my-4 bg-blue-600 text-white hover:bg-blue-700 rounded-xl" onClick={handleGptSearchClick}>
              {showGptSearch ? (
                 "HomePage"
               ) : (
